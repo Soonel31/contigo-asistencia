@@ -1,0 +1,386 @@
+:root{
+    --font: "Roboto", sans-serif;
+
+    --blanco: #FFF;
+    --negro: #000;
+    --azul: #0099ff;
+    --amarillo: #ffee00;
+    --grey: #b1b1b1;
+    --green: #1eeb0f;
+    --rojo: #e14343;
+}
+html{
+    scroll-behavior: smooth;
+}  
+body{
+    margin: 0;
+}
+h1,h2,h3{
+    margin: 0;
+    font-family: var(--font);
+}
+p{
+    font-size: 1.2rem;
+    font-family: var(--font);
+}
+a{
+    text-decoration: none;
+    color: var(--negro);
+    font-family: var(--font);
+}
+.contenido{
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem auto;
+}
+.titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.navegador{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem auto
+}
+.navegador a{
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    &:hover{
+        transition-duration: 200ms;
+        background-color: var(--azul);
+        border-radius: 10px;
+        color: var(--blanco);
+
+    }
+}
+
+.bgimg{
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-width: 100%;
+    height: 50rem;
+    background-attachment: fixed;
+}
+.mensajePrincipalContenido{
+    padding: 2rem 2rem;
+    width: 80rem;
+    margin: -20rem  auto 10rem auto;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.1);
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 3rem auto;
+}
+.conectando{
+    width: 90%;
+    margin: 0 auto;
+}
+.boton{
+    color: var(--blanco);
+    background-color: var(--azul);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+}
+.boton:hover{
+    transition: 500ms;
+    background-color: var(--amarillo);
+}
+h2{
+    font-size: 4rem;
+}
+.main h2{
+    text-align: center;
+}
+.main p{
+    width: 70%;
+    margin: 1.5rem auto;
+    font-family: var(--font);
+    font-size: 1.8rem;  
+    text-align: justify; 
+}
+.tituloParrafo{
+    font-weight: bold;
+}
+.subtitulo{
+    margin-top: 5rem !important;
+    font-size: 3rem !important;
+    font-weight: bold;
+}
+.beneficiosDetalle{
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.1);
+}
+.beneficiosDetalle:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.beneficiosDetalle p{
+    margin: 0;
+    width: 100% !important;
+
+}
+.beneficiosDetalle li{
+    margin: 0 1rem;
+    list-style: none;
+    font-family: var(--font);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 1.5rem 0;
+}
+.esp{
+    width: 70%;
+}
+.tituloCont{
+    text-align: center;
+}
+.asistentes{
+    margin-top: 3rem ;
+}
+h3{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+}
+.tarjeta{
+    background-color: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.1);
+
+}
+.datos{
+    margin: 2rem;
+}
+.datos p{
+    color: var(--negro);
+    font-size: 1.5rem;
+}
+.tarjeta:hover{
+    transition: 500ms;
+    background-color: var(--blanco);
+    box-shadow: 2px 2px 20px 5px rgba(0, 179, 255, 0.4);
+}
+.indice{
+    color:var(--azul)
+}
+img{
+    width: 25rem;
+    height: auto;
+
+}
+.boton-contacto{
+    background-color: #0099ff;
+    color: var(--blanco);
+    padding: 1rem 5rem;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+}
+.localizacion{
+    color: var(--azul)!important;
+}
+.imagen{
+    width: 100%;
+    height: 17rem;
+    overflow: hidden;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+    border-radius: 10px 10px 50% 50%;
+}
+fieldset{
+    margin: 2rem;
+    border-radius: 10px;
+}
+legend{
+    font-family: var(--font);
+    font-size: 1.8rem;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2.5rem;
+}
+label{
+    font-family: var(--font);
+    font-size: 1.5rem;
+}
+input{
+    border-radius: 10px;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+
+}
+.precio{
+    font-size: 2rem !important;
+    color: var(--green) !important;
+}
+.descuento{
+    text-decoration:line-through;
+    color: var(--grey);
+    font-size: 1.4rem;
+}
+.nodisp{
+    color: var(--rojo) !important;
+}
+.btn{
+    margin: 0 auto;
+}
+footer{
+    background-color: var(--azul);
+    padding: 2rem;
+    margin: 0 auto !important;
+}
+.imgfooter{
+    width: 7rem;
+    height: auto;
+    border-radius: 50%;
+}
+.txtfooter{
+    color:var(--blanco) !important;
+}
+.infoInstitucional {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex-wrap: wrap;
+}
+
+.infoInstitucional .bloque {
+    flex: 1;
+    min-width: 25rem;
+    max-width: 35rem;
+    text-align: center;
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.infoInstitucional h2 {
+    font-size: 2.5rem;
+    color: var(--azul);
+    margin-bottom: 1rem;
+}
+
+.infoInstitucional p {
+    font-size: 1.6rem;
+    font-family: var(--font);
+    color: #333;
+    text-align: justify;
+}
+.carrusel {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.carrusel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100rem;
+    margin: 3rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.carrusel-slider {
+    display: flex;
+    width: 400%;
+    animation: deslizar 16s infinite;
+}
+
+.carrusel-slider img {
+    max-width: 100%;         /* Evita que se estire más allá del contenedor */
+    height: auto;            /* Ajusta altura automáticamente */
+    max-height: 20rem;       /* Controla altura máxima */
+    object-fit: contain;     /* Mantiene proporción sin recortar */
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+@keyframes deslizar {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+/* Contenedor que oculta el overflow del carrusel */
+.carrusel-container {
+    overflow: hidden;
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+/* Carrusel que se desliza automáticamente */
+.carrusel-slider {
+    display: flex;
+    gap: 2rem;
+    animation: deslizar 40s linear infinite;
+    width: max-content;
+}
+
+/* Imágenes del carrusel */
+.carrusel-slider img {
+    width: 25rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Animación de desplazamiento continuo */
+@keyframes deslizar {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
